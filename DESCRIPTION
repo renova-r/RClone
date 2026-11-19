@@ -1,5 +1,5 @@
 Package: RClone
-Version: 1.0.3.9001
+Version: 1.0.3.9002
 Title: Partially Clonal Populations Analysis
 Authors@R: c(
     person("Sophie", "Arnaud-Haond", email = "sophie.arnaud@ifremer.fr", role = "aut"),
@@ -16,8 +16,8 @@ LazyLoad: yes
 Depends: R (>= 3.2.0), graphics, stats, grDevices, utils, datasets,
         methods
 URL: https://github.com/dbailleul/RClone
-Suggests: knitr, rmarkdown, pander, testthat
-VignetteBuilder: knitr, rmarkdown
+Suggests: R.rsp, knitr, rmarkdown, pander, testthat
+VignetteBuilder: R.rsp
 NeedsCompilation: no
 Packaged: 2021-05-15 10:22:12 UTC; jerome
 Repository: CRAN
