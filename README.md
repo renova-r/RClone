@@ -1,45 +1,24 @@
-[![Build Status](https://travis-ci.org/dbailleul/RClone.svg?branch=master)](https://travis-ci.org/dbailleul/RClone)
-[![Coverage Status](https://codecov.io/github/dbailleul/RClone/coverage.svg?branch=master)](https://codecov.io/github/dbailleul/RClone?branch=master)
-[![CRAN Status](http://www.r-pkg.org/badges/version/RClone)](https://cran.r-project.org/package=RClone)
+# RClone
 
+Analyzes the clonal structure of populations.
 
-# RClone v1.0.3
+Compatibility updates by Renova.
 
-*RClone* is a R package version of *GenClone* program: to analyse data (SSR, SNP, ...), test for clonality and describe spatial clonal organisation.
-
-*RClone* allows:
-
-1. Description of data set  
-    * discrimination of MLG (MultiLocus Genotypes);  
-    * test for reliability of data (in terms of loci and sampling).  
-2. Determination of MLL (MultiLocus Lineages)  
-    * psex/psex Fis with pvalue computation;  
-    * genetic distance matrix computation and threshold definition.  
-3. Genotypic diversity and evenness indices calculation  
-    * Simpson complement;  
-    * Shannon-Wiener diversity and evenness indices;  
-    * Hill's Simpson reciprocal;
-    * Pareto index.  
-4. Spatial organisation of MLG/MLL  
-    * spatial autocorrelation methods;  
-    * clonal subrange estimation;  
-    * Aggregation index and Edge Effect estimation.  
-
-Some of these analysis can be applied to dataset without clones. 
+Repairs the list markup in the spatial autocorrelation help page and removes the stale Date field.
 
 ## Installation
 
-Get the lastest development version from github:
+```r
+install.packages("RClone", repos = c(
+  Renova = "https://renova-r.r-universe.dev",
+  CRAN = "https://cloud.r-project.org"
+))
+```
 
-    #install.packages("devtools")
-    devtools::install_github("dbailleul/RClone")
-    library(RClone)
+Version `1.0.3.9001` is based on [CRAN 1.0.3](https://cran.r-project.org/package=RClone).
 
-or the released version from CRAN:
+## Credit
 
-    install.packages("RClone")
+Sophie Arnaud-Haond [aut], Diane Bailleul [aut, cre], Solenn Stoeckel [ctb].
 
-And then, generate manuals:
-
-    vignette("RClone_quickmanual") #analysing one population
-    vignette("RClone_qmsevpops") #analysing several populations
+Licensed under `GPL (>= 2.0)`.

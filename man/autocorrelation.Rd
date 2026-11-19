@@ -127,7 +127,6 @@ For \command{b} and \command{Sp}, their p-value correspond to upper p-value.\cr
 \value{
 \command{autocorrelation} returns a list (one population) or lists of list 
 (several populations) of:
-\itemize{
 	\item{\command{Main_results}}{, a table with for each class, min, max, mean and 
 	ln(mean) of distance between two units, the number of pairs, the mean 
 	kinship coefficient and \cr if \command{pvalue = TRUE}, the pvalue.}
@@ -145,7 +144,6 @@ For \command{b} and \command{Sp}, their p-value correspond to upper p-value.\cr
 	class.}
 	\item{\command{Class_distance_results}}{, a list of geographical distances by distance
 	 class.}
-}
 }
 
 \references{
